@@ -1,0 +1,125 @@
+.main {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    background-image: linear-gradient(to right, #006ec9 , #898bad);
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.todo__input {
+    background-color: #c0d7eb;
+    width: 310px;
+    height: 25px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    color: #000000;
+}
+
+.add__button {
+    min-width: 100px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #006ec9;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.delete_all__button {
+    min-width: 100px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #e00f0f;
+    color: white;
+    border: none;
+    border-radius:50px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.todo-list {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20PX;
+}
+
+.not-completed-item {
+    background-color: #b3d8e4;
+    color: #313131;
+    width: 320px;
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    word-wrap: break-word;
+}
+
+.completed-item {
+    background-color: #dfb600;
+    color: white;
+    width: 320px;
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    word-wrap: break-word;
+    text-decoration: line-through;
+}
+
+.icon {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.isComplete-Icon {
+    cursor: pointer;
+} 
+
+.no-job-text {
+    color: #2985c2;
+}
+
+.todo__input:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 420px) {
+    .title {
+        font-size: 18px;
+    }
+    .todo__input {
+        width: 265px;
+    }
+    .not-completed-item {
+        width: 265px;
+    }
+    
+    .completed-item {
+        width: 265px;
+    }
+  }
